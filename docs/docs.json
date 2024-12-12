@@ -1,0 +1,73 @@
+{
+    "baseURl": "http:localhost:5000",
+    "endPoints": {
+        "users": [
+            {
+                "req": "get",
+                "route": "/",
+                "body": "null"
+            },
+            {
+                "req": "post",
+                "route": "/login",
+                "body": [
+                    "email",
+                    "password"
+                ]
+            },
+            {
+                "req": "post",
+                "route": "/signup",
+                "body": [
+                    "name",
+                    "email",
+                    "password"
+                ]
+            }
+        ],
+        "tasks": [
+            {
+                "req": "get",
+                "route": "/",
+                "body": []
+            },
+            {
+                "req": "get",
+                "route": "/:id",
+                "body": []
+            },
+            {
+                "req": "post",
+                "route": "/",
+                "body": [
+                    "title",
+                    "description",
+                    "completed"
+                ]
+            },
+            {
+                "req": "put",
+                "route": "/:id",
+                "body": [
+                    "title",
+                    "description",
+                    "completed"
+                ]
+            },
+            {
+                "req": "patch",
+                "route": "/:id",
+                "body": [
+                    "title",
+                    "description",
+                    "completed"
+                ]
+            },
+            {
+                "req": "delete",
+                "route": "/:id",
+                "body": []
+            }
+        ]
+    }
+}
